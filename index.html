@@ -16,38 +16,21 @@
 <meta name="author" content="Ednilton Matos">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://lp-tesp.vercel.app/">
-
-<!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://lp-tesp.vercel.app/">
 <meta property="og:title" content="TESP — Saiba o tempo de espera antes de aceitar o pedido">
 <meta property="og:description" content="App gratuito para entregadores iFood SP. Notificação automática com tempo médio de espera da loja. Feito por motoboy, pra motoboy.">
-<meta property="og:image" content="https://lp-tesp.vercel.app/s-lojas.png">
+<meta property="og:image" content="https://lp-tesp.vercel.app/logo.png">
 <meta property="og:locale" content="pt_BR">
-
-<!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="TESP — Saiba o tempo de espera antes de aceitar o pedido">
 <meta name="twitter:description" content="App gratuito para entregadores iFood SP. Notificação automática com tempo médio de espera da loja.">
-<meta name="twitter:image" content="https://lp-tesp.vercel.app/s-lojas.png">
-
-<!-- Schema.org -->
+<meta name="twitter:image" content="https://lp-tesp.vercel.app/logo.png">
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "MobileApplication",
-  "name": "TESP — Tempo de Espera SP",
-  "description": "App gratuito para entregadores iFood de São Paulo. Receba notificação automática com o tempo médio de espera da loja no momento que a oferta chegar.",
-  "operatingSystem": "Android",
-  "applicationCategory": "UtilitiesApplication",
-  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "BRL" },
-  "author": { "@type": "Person", "name": "Ednilton Matos" },
-  "url": "https://lp-tesp.vercel.app/"
-}
+{"@context":"https://schema.org","@type":"MobileApplication","name":"TESP — Tempo de Espera SP","description":"App gratuito para entregadores iFood de São Paulo. Receba notificação automática com o tempo médio de espera da loja no momento que a oferta chegar.","operatingSystem":"Android","applicationCategory":"UtilitiesApplication","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"author":{"@type":"Person","name":"Ednilton Matos"},"url":"https://lp-tesp.vercel.app/"}
 </script>
 
 <!-- Google Analytics -->
-<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YQ19E6RX8G"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -67,7 +50,7 @@
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--txt);font-family:'Space Grotesk',sans-serif;font-size:16px;line-height:1.6;overflow-x:hidden}
-.gbg{position:fixed;inset:0;background-image:linear-gradient(var(--bd) 1px,transparent 1px),linear-gradient(90deg,var(--bd) 1px,transparent 1px);background-size:48px 48px;opacity:.25;pointer-events:none;z-index:0}
+.gbg{position:fixed;inset:0;background-image:linear-gradient(var(--bd) 1px,transparent 1px),linear-gradient(90deg,var(--bd) 1px,transparent 1px);background-size:48px 48px;opacity:.22;pointer-events:none;z-index:0}
 .c{max-width:940px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
 
 /* NAV */
@@ -86,23 +69,22 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;border-bottom:1px solid var(
 
 /* HERO */
 #hero{min-height:100vh;display:flex;align-items:center;padding-top:56px;position:relative;overflow:hidden}
-.hero-glow{position:absolute;top:-80px;left:50%;transform:translateX(-50%);width:800px;height:600px;background:radial-gradient(ellipse,rgba(245,208,0,0.06) 0%,transparent 65%);pointer-events:none}
-.hero-layout{display:grid;grid-template-columns:1fr 300px;gap:56px;align-items:center;padding:80px 0 60px}
+.hero-glow{position:absolute;top:-80px;left:50%;transform:translateX(-50%);width:800px;height:600px;background:radial-gradient(ellipse,rgba(245,208,0,0.055) 0%,transparent 65%);pointer-events:none}
+.hero-layout{display:grid;grid-template-columns:1fr 280px;gap:56px;align-items:center;padding:80px 0 60px}
 
-/* PHONE */
-.phone-wrap{position:relative}
-.phone{width:240px;background:#111;border:2px solid var(--bd);border-radius:36px;padding:8px;box-shadow:0 0 0 1px #000,0 32px 80px rgba(0,0,0,.7),0 0 60px rgba(245,208,0,0.07);position:relative;margin:0 auto}
-.phone video,.phone img{border-radius:28px;width:100%;display:block}
-.phone-notch{position:absolute;top:14px;left:50%;transform:translateX(-50%);width:60px;height:7px;background:#000;border-radius:4px;z-index:2}
-.phone-glow{position:absolute;bottom:-40px;left:50%;transform:translateX(-50%);width:200px;height:80px;background:radial-gradient(ellipse,rgba(245,208,0,0.13) 0%,transparent 70%)}
+/* PHONE MOCKUP */
+.phone{width:100%;background:#0a0a0a;border:2px solid #2a2a2a;border-radius:40px;padding:10px;box-shadow:0 0 0 1px #000,0 32px 80px rgba(0,0,0,.75),0 0 50px rgba(245,208,0,0.06);position:relative}
+.phone video,.phone img{border-radius:30px;width:100%;display:block;object-fit:cover}
+.phone-notch{position:absolute;top:16px;left:50%;transform:translateX(-50%);width:56px;height:7px;background:#000;border-radius:4px;z-index:2}
+.phone-glow{position:absolute;bottom:-40px;left:50%;transform:translateX(-50%);width:200px;height:80px;background:radial-gradient(ellipse,rgba(245,208,0,0.12) 0%,transparent 70%)}
 
 .ver-badge{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--bd);background:var(--s1);padding:6px 14px;margin-bottom:28px;font-family:'Space Mono',monospace;font-size:10px;letter-spacing:2px;color:var(--gr);text-transform:uppercase}
-.vdot{width:5px;height:5px;background:var(--gr);border-radius:50%;animation:pulse 2s infinite}
+.vdot{width:5px;height:5px;background:var(--gr);border-radius:50%;animation:pulse 2s infinite;flex-shrink:0}
 @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(1.4)}}
 
-h1{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(32px,5vw,60px);line-height:1.0;letter-spacing:-2px;margin-bottom:24px}
+h1{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(32px,5vw,58px);line-height:1.0;letter-spacing:-2px;margin-bottom:24px}
 h1 .ac{color:var(--y)}
-h1 .dim{color:var(--mu);font-size:clamp(22px,3.5vw,40px);display:block;margin-top:8px;letter-spacing:-1.5px}
+h1 .dim{color:var(--mu);font-size:clamp(22px,3.5vw,38px);display:block;margin-top:8px;letter-spacing:-1.5px}
 .hero-sub{font-size:17px;color:var(--txt2);line-height:1.7;margin-bottom:36px;max-width:460px}
 .hero-sub strong{color:var(--y);font-weight:500}
 
@@ -122,6 +104,15 @@ h2{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(26
 h2 .ac{color:var(--y)}
 .lead{font-size:16px;color:var(--txt2);max-width:560px;margin-bottom:48px;line-height:1.7}
 .div{height:1px;background:var(--bd)}
+
+/* DEMO SECTION — 2 phones lado a lado */
+.demo-duo{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.demo-col{display:flex;flex-direction:column;align-items:center;gap:20px}
+.demo-col-label{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--y);text-align:center}
+.demo-col-desc{font-size:13px;color:var(--mu);text-align:center;line-height:1.6;max-width:260px}
+.phone-demo{width:220px;background:#0a0a0a;border:2px solid #2a2a2a;border-radius:38px;padding:9px;box-shadow:0 0 0 1px #000,0 24px 60px rgba(0,0,0,.7),0 0 40px rgba(245,208,0,0.05);position:relative}
+.phone-demo video,.phone-demo img{border-radius:28px;width:100%;display:block}
+.phone-demo-notch{position:absolute;top:15px;left:50%;transform:translateX(-50%);width:52px;height:6px;background:#000;border-radius:4px;z-index:2}
 
 /* CARDS */
 .cgrid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--bd);border:1px solid var(--bd)}
@@ -143,12 +134,12 @@ h2 .ac{color:var(--y)}
 .step-d{font-size:13px;color:var(--mu);line-height:1.65}
 .step-d strong{color:var(--txt2)}
 
-/* SCREENS */
+/* SCREENS 4 telas */
 .screens{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--bd);border:1px solid var(--bd)}
 .sc-card{background:var(--s1);padding:24px 16px;display:flex;flex-direction:column;align-items:center;gap:16px}
 .sc-label{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--y);text-align:center}
 .sc-desc{font-size:12px;color:var(--mu);text-align:center;line-height:1.6}
-.mini{width:120px;background:#111;border:1px solid var(--bd);border-radius:18px;padding:4px;box-shadow:0 12px 32px rgba(0,0,0,.5)}
+.mini{width:110px;background:#0a0a0a;border:1px solid #2a2a2a;border-radius:18px;padding:4px;box-shadow:0 12px 32px rgba(0,0,0,.5)}
 .mini img{border-radius:14px;width:100%;display:block}
 
 /* COMO CALCULA */
@@ -158,7 +149,6 @@ h2 .ac{color:var(--y)}
 .calc-live{font-family:'Space Mono',monospace;font-size:10px;color:var(--gr);display:flex;align-items:center;gap:6px}
 .calc-body{padding:28px}
 .calc-flow{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-bottom:28px}
-.cf-step{position:relative}
 .cf-num{font-family:'Space Mono',monospace;font-size:10px;color:var(--y);letter-spacing:2px;margin-bottom:8px}
 .cf-title{font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:13px;color:var(--txt);margin-bottom:4px}
 .cf-desc{font-size:12px;color:var(--mu);line-height:1.5}
@@ -178,23 +168,6 @@ h2 .ac{color:var(--y)}
 .wide-in{display:grid;grid-template-columns:200px 1fr}
 .wide-in img{width:200px;height:100%;object-fit:cover;display:block;border-right:1px solid var(--bd)}
 
-/* VIDEO */
-.vid-wrap{border:1px solid var(--bd);border-top:none;background:#000;overflow:hidden}
-.vid-label{padding:10px 20px;font-family:'Space Mono',monospace;font-size:10px;letter-spacing:2px;color:var(--mu);text-transform:uppercase;border-bottom:1px solid var(--bd)}
-.vid-wrap video{width:100%;max-height:420px;object-fit:contain;display:block}
-
-/* LOJAS */
-.lojas-wrap{border:1px solid var(--bd);overflow:hidden}
-.lojas-h{padding:14px 24px;border-bottom:1px solid var(--bd);display:flex;align-items:center;justify-content:space-between;background:var(--s2)}
-.lojas-ht{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--mu)}
-.lojas-ct{font-family:'Space Mono',monospace;font-size:10px;color:var(--y)}
-.lojas-grid{display:grid;grid-template-columns:1fr 1fr 1fr}
-.loja-i{padding:12px 20px;border-bottom:1px solid var(--bd);border-right:1px solid var(--bd);font-size:13px;color:var(--txt2);transition:background .15s;display:flex;align-items:center;gap:8px}
-.loja-i:hover{background:var(--s2)}
-.loja-i::before{content:'';width:6px;height:6px;background:var(--gr);border-radius:50%;flex-shrink:0}
-.lojas-f{padding:14px 24px;border-top:1px solid var(--bd);font-size:12px;color:var(--mu);background:var(--s2)}
-.lojas-f span{color:var(--y)}
-
 /* QUEM FEZ */
 .quem{display:grid;grid-template-columns:200px 1fr;border:1px solid var(--bd);background:var(--bd);overflow:hidden}
 .quem-av{background:var(--s2);padding:36px 24px;display:flex;flex-direction:column;align-items:center;gap:14px}
@@ -206,6 +179,53 @@ h2 .ac{color:var(--y)}
 .quem-txt p{font-size:15px;color:var(--txt2);line-height:1.8;margin-bottom:14px}
 .quem-txt p:last-child{margin-bottom:0}
 .quem-txt strong{color:var(--y);font-weight:500}
+
+/* FORMULÁRIO */
+#acesso{padding:88px 0}
+.form-wrap{border:1px solid var(--bd);background:var(--s1);overflow:hidden;max-width:560px;margin:0 auto}
+.form-hdr{padding:20px 28px;border-bottom:1px solid var(--bd);background:var(--s2);display:flex;align-items:center;justify-content:space-between}
+.form-hdr-t{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--mu)}
+.form-hdr-b{font-family:'Space Mono',monospace;font-size:10px;color:var(--or);display:flex;align-items:center;gap:6px}
+.form-body{padding:32px 28px;display:flex;flex-direction:column;gap:20px}
+.field{display:flex;flex-direction:column;gap:8px}
+.field label{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--y)}
+.field input{background:var(--s2);border:1px solid var(--bd);color:var(--txt);padding:14px 16px;font-family:'Space Grotesk',sans-serif;font-size:15px;outline:none;transition:border-color .2s;width:100%;border-radius:0;-webkit-appearance:none}
+.field input:focus{border-color:var(--y)}
+.field input::placeholder{color:var(--mu2)}
+.field input.err{border-color:var(--rd)}
+.field-hint{font-size:12px;color:var(--mu)}
+.field-error{font-size:12px;color:var(--rd);display:none}
+.field input.err ~ .field-error{display:block}
+.form-aviso{border:1px solid var(--bd);border-left:3px solid var(--y);background:var(--bg);padding:14px 16px;font-size:13px;color:var(--txt2);line-height:1.6}
+.form-aviso strong{color:var(--y);font-weight:500}
+.btn-submit{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:13px;letter-spacing:2px;text-transform:uppercase;background:var(--y);color:#000;padding:16px 32px;border:none;cursor:pointer;width:100%;transition:opacity .2s;display:flex;align-items:center;justify-content:center;gap:10px}
+.btn-submit:hover{opacity:.85}
+.btn-submit:disabled{opacity:.5;cursor:not-allowed}
+.form-success{display:none;padding:40px 28px;text-align:center;flex-direction:column;align-items:center;gap:16px}
+.form-success.show{display:flex}
+.success-icon{font-size:40px}
+.success-title{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:22px;letter-spacing:-0.5px;color:var(--txt)}
+.success-sub{font-size:14px;color:var(--mu);line-height:1.7;max-width:360px}
+.success-sub strong{color:var(--y);font-weight:500}
+
+
+/* TOGGLE */
+.toggle-field { display: flex; align-items: flex-start; gap: 14px; cursor: pointer; }
+.toggle-field input[type="checkbox"] { display: none; }
+.toggle-track {
+  width: 44px; height: 24px; background: var(--bd); border: 1px solid var(--bd);
+  border-radius: 12px; position: relative; flex-shrink: 0; margin-top: 2px;
+  transition: background .2s, border-color .2s; cursor: pointer;
+}
+.toggle-track::after {
+  content: ''; position: absolute; top: 3px; left: 3px;
+  width: 16px; height: 16px; background: var(--mu); border-radius: 50%;
+  transition: transform .2s, background .2s;
+}
+.toggle-field input:checked ~ .toggle-track { background: var(--y); border-color: var(--y); }
+.toggle-field input:checked ~ .toggle-track::after { transform: translateX(20px); background: #000; }
+.toggle-label { font-size: 13px; color: var(--txt2); line-height: 1.6; }
+.toggle-label strong { color: var(--y); font-weight: 500; }
 
 /* FAQ */
 .faq{border:1px solid var(--bd);background:var(--bd);display:flex;flex-direction:column;gap:1px}
@@ -235,72 +255,35 @@ footer p{font-size:12px;color:var(--mu)}
 .fu{opacity:0;transform:translateY(20px);transition:opacity .55s ease,transform .55s ease}
 .fu.v{opacity:1;transform:translateY(0)}
 
-
-/* FORMULÁRIO DE ACESSO */
-#acesso { padding: 88px 0; }
-.form-wrap { border: 1px solid var(--bd); background: var(--s1); overflow: hidden; max-width: 560px; margin: 0 auto; }
-.form-header { padding: 20px 28px; border-bottom: 1px solid var(--bd); background: var(--s2); display: flex; align-items: center; justify-content: space-between; }
-.form-header-title { font-family: 'Space Mono', monospace; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--mu); }
-.form-header-badge { font-family: 'Space Mono', monospace; font-size: 10px; color: var(--or); display: flex; align-items: center; gap: 6px; }
-.form-body { padding: 32px 28px; display: flex; flex-direction: column; gap: 20px; }
-.field { display: flex; flex-direction: column; gap: 8px; }
-.field label { font-family: 'Space Mono', monospace; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--y); }
-.field input {
-  background: var(--s2); border: 1px solid var(--bd); color: var(--txt);
-  padding: 14px 16px; font-family: 'Space Grotesk', sans-serif; font-size: 15px;
-  outline: none; transition: border-color .2s; width: 100%; border-radius: 0;
-  -webkit-appearance: none;
-}
-.field input:focus { border-color: var(--y); }
-.field input::placeholder { color: var(--mu2); }
-.field input.err { border-color: var(--rd); }
-.field-hint { font-size: 12px; color: var(--mu); }
-.field-error { font-size: 12px; color: var(--rd); display: none; }
-.field input.err ~ .field-error { display: block; }
-.form-aviso { border: 1px solid var(--bd); border-left: 3px solid var(--y); background: var(--bg); padding: 14px 16px; font-size: 13px; color: var(--txt2); line-height: 1.6; }
-.form-aviso strong { color: var(--y); font-weight: 500; }
-.btn-submit { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; background: var(--y); color: #000; padding: 16px 32px; border: none; cursor: pointer; width: 100%; transition: opacity .2s; display: flex; align-items: center; justify-content: center; gap: 10px; }
-.btn-submit:hover { opacity: .85; }
-.btn-submit:disabled { opacity: .5; cursor: not-allowed; }
-.form-success { display: none; padding: 40px 28px; text-align: center; flex-direction: column; align-items: center; gap: 16px; }
-.form-success.show { display: flex; }
-.success-icon { font-size: 40px; }
-.success-title { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 22px; letter-spacing: -0.5px; color: var(--txt); }
-.success-sub { font-size: 14px; color: var(--mu); line-height: 1.7; max-width: 360px; }
-.success-sub strong { color: var(--y); font-weight: 500; }
-@media(max-width:720px){
-  .form-body { padding: 24px 20px; }
-  .form-header { padding: 16px 20px; }
-}
-
 /* MOBILE */
 @media(max-width:720px){
   .c{padding:0 16px}
   section{padding:64px 0}
   .nav-i{padding:0 16px}
   .nav-ver{display:none}
-  h1{font-size:32px;letter-spacing:-1.5px}
-  h1 .dim{font-size:22px}
-  .hero-layout{grid-template-columns:1fr;gap:40px;padding:56px 0 40px}
-  .phone{width:200px}
+  h1{font-size:30px;letter-spacing:-1.5px}
+  h1 .dim{font-size:20px}
+  .hero-layout{grid-template-columns:1fr;gap:36px;padding:56px 0 40px}
   .stats{grid-template-columns:1fr 1fr}
   .cgrid{grid-template-columns:1fr}
+  .demo-duo{grid-template-columns:1fr;gap:48px}
+  .phone-demo{width:180px}
   .screens{grid-template-columns:1fr 1fr}
   .calc-flow{grid-template-columns:1fr 1fr}
   .fb-grid{grid-template-columns:1fr}
   .fb-card.wide{grid-column:auto}
   .wide-in{grid-template-columns:1fr}
   .wide-in img{width:100%;height:160px;border-right:none;border-bottom:1px solid var(--bd)}
-  .lojas-grid{grid-template-columns:1fr 1fr}
   .quem{grid-template-columns:1fr}
   .quem-av{flex-direction:row;padding:24px;border-bottom:1px solid var(--bd)}
   .quem-txt{padding:24px}
   .btn{width:100%;justify-content:center}
+  .form-body{padding:24px 20px}
+  .form-hdr{padding:16px 20px}
   footer .fi{flex-direction:column;align-items:flex-start}
 }
 @media(max-width:440px){
   .screens{grid-template-columns:1fr}
-  .lojas-grid{grid-template-columns:1fr}
   .calc-flow{grid-template-columns:1fr}
 }
 </style>
@@ -336,26 +319,27 @@ footer p{font-size:12px;color:var(--mu)}
         <a href="#acesso" class="btn" onclick="gtag('event','cta_click',{'event_category':'hero'})">Solicitar acesso <span>↓</span></a>
         <p class="btn-note">Grátis · Preenche o formulário abaixo · Acesso liberado em até 24h</p>
         <div class="stats fu">
-          <div class="stat"><span class="stat-n">61+</span><span class="stat-l">Lojas com dados</span></div>
-          <div class="stat"><span class="stat-n">5</span><span class="stat-l">Entregadores ativos</span></div>
+          <div class="stat"><span class="stat-n">20+</span><span class="stat-l">Usuários ativos</span></div>
+          <div class="stat"><span class="stat-n">98+</span><span class="stat-l">Lojas com dados</span></div>
           <div class="stat"><span class="stat-n">SP</span><span class="stat-l">Capital de São Paulo</span></div>
-          <div class="stat"><span class="stat-n">V1.0.1</span><span class="stat-l">Beta aberto</span></div>
+          <div class="stat"><span class="stat-n">V0.1</span><span class="stat-l">Beta aberto</span></div>
         </div>
       </div>
-      <div class="phone-wrap fu">
-        <div class="phone">
-          <div class="phone-notch"></div>
-          <video autoplay muted loop playsinline>
-            <source src="tesp-demo.mp4" type="video/mp4">
-          </video>
+      <!-- HERO PHONE — vídeo da notificação -->
+      <div class="fu" style="display:flex;justify-content:center">
+        <div style="position:relative">
+          <div class="phone">
+            <div class="phone-notch"></div>
+            <video autoplay muted loop playsinline>
+              <source src="notif-demo.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="phone-glow"></div>
         </div>
-        <div class="phone-glow"></div>
       </div>
     </div>
   </div>
 </section>
-
-
 
 <div class="div"></div>
 
@@ -365,16 +349,13 @@ footer p{font-size:12px;color:var(--mu)}
     <div class="ey fu" style="justify-content:center"><div class="ey-l"></div><span class="ey-t">Fase de testes · Vagas abertas</span></div>
     <h2 class="fu" style="text-align:center;margin-bottom:12px">Preenche o formulário.<br><span class="ac">A gente libera em até 24h.</span></h2>
     <p class="fu" style="text-align:center;font-size:15px;color:var(--txt2);max-width:480px;margin:0 auto 40px;line-height:1.7">
-      O acesso é liberado manualmente. Use o <strong style="color:var(--y)">mesmo e-mail da sua conta Google</strong> — ele precisa estar logado na Play Store pra receber o link de instalação.
+      O acesso é liberado manualmente. Use o <strong style="color:var(--y)">mesmo e-mail da sua conta Google</strong> — ele precisa estar logado na Play Store pra receber o link.
     </p>
-
     <div class="form-wrap fu">
-      <div class="form-header">
-        <span class="form-header-title">Solicitação de acesso — TESP Beta</span>
-        <span class="form-header-badge"><span class="vdot" style="background:var(--or)"></span>Acesso em até 24h</span>
+      <div class="form-hdr">
+        <span class="form-hdr-t">Solicitação de acesso — TESP Beta</span>
+        <span class="form-hdr-b"><span class="vdot" style="background:var(--or)"></span>Acesso em até 24h</span>
       </div>
-
-      <!-- FORMULÁRIO -->
       <div class="form-body" id="form-body">
         <div class="field">
           <label for="nome">Nome *</label>
@@ -388,29 +369,31 @@ footer p{font-size:12px;color:var(--mu)}
           <span class="field-error">Insira um e-mail válido</span>
         </div>
         <div class="field">
-          <label for="instagram">@ do Instagram *</label>
-          <input type="text" id="instagram" placeholder="@seunome">
-          <span class="field-hint">Ex: @seunome</span>
-          <span class="field-error">Campo obrigatório</span>
+          <label for="whatsapp">WhatsApp *</label>
+          <input type="tel" id="whatsapp" placeholder="(11) 99999-9999" autocomplete="tel" inputmode="numeric" maxlength="15">
+          <span class="field-hint">Número com DDD — vamos enviar o link por aqui</span>
+          <span class="field-error">Insira um número válido com DDD (ex: 11999999999)</span>
         </div>
+        <label class="toggle-field">
+          <input type="checkbox" id="grupo_whatsapp">
+          <div class="toggle-track"></div>
+          <span class="toggle-label">
+            Quero entrar no <strong>grupo de testadores no WhatsApp</strong> com todos os usuários do TESP beta.
+          </span>
+        </label>
         <div class="form-aviso">
-          ⚠️ <strong>Atenção:</strong> pra conseguir instalar o app com o link que vamos enviar, seu celular precisa estar logado na Play Store com <strong>este mesmo e-mail</strong>.
+          ⚠️ <strong>Atenção:</strong> pra instalar o app com o link que vamos enviar, seu celular precisa estar logado na Play Store com <strong>este mesmo e-mail</strong>.
         </div>
         <button class="btn-submit" id="btn-submit" onclick="enviarFormulario()">
           <span id="btn-text">Solicitar acesso</span>
-          <span id="btn-arrow">→</span>
+          <span id="btn-arrow"> →</span>
         </button>
         <p id="form-error-geral" style="display:none;text-align:center;font-size:13px;color:var(--rd)">Erro ao enviar. Tenta de novo em alguns segundos.</p>
       </div>
-
-      <!-- SUCESSO -->
       <div class="form-success" id="form-success">
         <span class="success-icon">✅</span>
         <div class="success-title">Solicitação enviada!</div>
-        <p class="success-sub">
-          Recebemos seus dados. Vamos liberar o acesso em até <strong>24 horas</strong>.<br><br>
-          Fique de olho no e-mail cadastrado — o link de instalação chega por lá via Play Store.
-        </p>
+        <p class="success-sub">Recebemos seus dados. Vamos liberar o acesso em até <strong>24 horas</strong>.<br><br>Fique de olho no WhatsApp — o link de instalação chega por lá.</p>
       </div>
     </div>
   </div>
@@ -423,35 +406,68 @@ footer p{font-size:12px;color:var(--mu)}
   <div class="c">
     <div class="ey fu"><div class="ey-l"></div><span class="ey-t">Como funciona</span></div>
     <h2 class="fu">O app trabalha.<br><span class="ac">Você só entrega.</span></h2>
-    <p class="lead fu">Sem apertar botão. Sem abrir o app durante a correria. O TESP roda em segundo plano e faz tudo automaticamente enquanto você faz suas entregas.</p>
+    <p class="lead fu">Sem apertar botão. Sem abrir o app durante a correria. O TESP roda em segundo plano e registra tudo automaticamente enquanto você faz suas entregas.</p>
     <div class="steps fu">
       <div class="step">
         <span class="step-n">01</span>
         <div class="step-c">
-          <div class="step-t">Preenche o formulário de acesso</div>
-          <div class="step-d">Nome, e-mail e Instagram. <strong>Use o mesmo e-mail da sua conta Google/Play Store</strong> — é ele que vai receber o link de instalação.</div>
+          <div class="step-t">Preenche o formulário</div>
+          <div class="step-d">Nome, e-mail e WhatsApp. <strong>Use o e-mail da sua conta Google/Play Store</strong> — é ele que vai receber o link de instalação.</div>
         </div>
       </div>
       <div class="step">
         <span class="step-n">02</span>
         <div class="step-c">
-          <div class="step-t">Instala e faz o cadastro</div>
-          <div class="step-d">Baixa pela Play Store. Cadastro rápido: <strong>nome e telefone.</strong> Sem senha, sem confirmação de SMS.</div>
+          <div class="step-t">Aguarda até 24h</div>
+          <div class="step-d">O acesso é liberado manualmente. Você recebe o <strong>link de instalação via WhatsApp</strong> e instala pela Play Store.</div>
         </div>
       </div>
       <div class="step">
         <span class="step-n">03</span>
         <div class="step-c">
-          <div class="step-t">Ativa acessibilidade e notificações</div>
-          <div class="step-d">O app te leva direto pras configurações. <strong>Ativa o TESP na lista de serviços</strong> e permite as notificações. Menos de 1 minuto.</div>
+          <div class="step-t">Instala e ativa acessibilidade</div>
+          <div class="step-d">Cadastro rápido com nome e telefone. Ativa o serviço de acessibilidade e as notificações. <strong>Menos de 1 minuto.</strong></div>
         </div>
       </div>
       <div class="step">
         <span class="step-n">04</span>
         <div class="step-c">
-          <div class="step-t">Recebe a oferta — e já sabe o tempo de espera</div>
-          <div class="step-d">Quando o iFood te mandar uma oferta, o TESP envia uma notificação com a <strong>média de tempo de espera daquela loja.</strong> Você decide com informação real.</div>
+          <div class="step-t">Recebe a notificação na oferta</div>
+          <div class="step-d">Quando o iFood te mandar uma oferta, o TESP notifica com a <strong>média de tempo de espera daquela loja.</strong> Você decide antes de aceitar.</div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="div"></div>
+
+<!-- DEMO — 2 phones: notificação + app -->
+<section>
+  <div class="c">
+    <div class="ey fu"><div class="ey-l"></div><span class="ey-t">Veja na prática</span></div>
+    <h2 class="fu">A notificação.<br><span class="ac">E o app por dentro.</span></h2>
+    <p class="lead fu">Dois momentos do TESP: quando a oferta chega e você recebe o aviso — e o app com os dados de todas as lojas.</p>
+    <div class="demo-duo fu">
+      <div class="demo-col">
+        <div class="phone-demo">
+          <div class="phone-demo-notch"></div>
+          <video autoplay muted loop playsinline>
+            <source src="notif-demo.mp4" type="video/mp4">
+          </video>
+        </div>
+        <span class="demo-col-label">Notificação em tempo real</span>
+        <p class="demo-col-desc">No momento que a oferta aparece, o TESP já avisa o tempo médio de espera daquela loja.</p>
+      </div>
+      <div class="demo-col">
+        <div class="phone-demo">
+          <div class="phone-demo-notch"></div>
+          <video autoplay muted loop playsinline>
+            <source src="tesp-demo.mp4" type="video/mp4">
+          </video>
+        </div>
+        <span class="demo-col-label">App em funcionamento</span>
+        <p class="demo-col-desc">Todas as lojas com dados em tempo real. Ranking, médias e seus registros de coleta.</p>
       </div>
     </div>
   </div>
@@ -464,27 +480,27 @@ footer p{font-size:12px;color:var(--mu)}
   <div class="c">
     <div class="ey fu"><div class="ey-l"></div><span class="ey-t">Interface real</span></div>
     <h2 class="fu">Quatro telas.<br><span class="ac">Tudo que você precisa.</span></h2>
-    <p class="lead fu">Design direto, sem enrolação. Você vai usar principalmente via notificação — sem precisar abrir o app durante a correria.</p>
+    <p class="lead fu">Design direto. Você vai usar principalmente via notificação — sem precisar abrir o app durante a correria.</p>
     <div class="screens fu">
       <div class="sc-card">
-        <div class="mini"><img src="s-cadastro.png" alt="Tela cadastro"></div>
+        <div class="mini"><img src="s-cadastro.png" alt="Cadastro"></div>
         <span class="sc-label">Cadastro</span>
-        <p class="sc-desc">Nome e telefone. Sem senha. Feito uma vez, nunca mais.</p>
+        <p class="sc-desc">Nome e telefone. Uma vez só.</p>
       </div>
       <div class="sc-card">
-        <div class="mini"><img src="s-acesso.png" alt="Tela acessibilidade"></div>
+        <div class="mini"><img src="s-acesso.png" alt="Acessibilidade"></div>
         <span class="sc-label">Acessibilidade</span>
-        <p class="sc-desc">Ativa o serviço e as notificações. Um toque, pronto.</p>
+        <p class="sc-desc">Ativa o serviço. Um toque.</p>
       </div>
       <div class="sc-card">
-        <div class="mini"><img src="s-lojas.png" alt="Tela médias"></div>
+        <div class="mini"><img src="s-lojas.png" alt="Lojas"></div>
         <span class="sc-label">Médias por loja</span>
-        <p class="sc-desc">Tempo médio de espera de todas as lojas, em tempo real.</p>
+        <p class="sc-desc">98+ lojas em tempo real.</p>
       </div>
       <div class="sc-card">
-        <div class="mini"><img src="s-registros.png" alt="Tela registros"></div>
-        <span class="sc-label">Seus registros</span>
-        <p class="sc-desc">Histórico das suas coletas. Quanto você esperou em cada loja.</p>
+        <div class="mini"><img src="s-ranking.png" alt="Ranking"></div>
+        <span class="sc-label">Ranking</span>
+        <p class="sc-desc">Maior e menor espera agora.</p>
       </div>
     </div>
   </div>
@@ -497,30 +513,30 @@ footer p{font-size:12px;color:var(--mu)}
   <div class="c">
     <div class="ey fu"><div class="ey-l"></div><span class="ey-t">O diferencial</span></div>
     <h2 class="fu">Zero interação.<br><span class="ac">100% automático.</span></h2>
-    <p class="lead fu">O TESP usa o Serviço de Acessibilidade do Android pra ler a tela do iFood. Sabe quando você chegou na loja. Sabe quando saiu com o pedido. Registra tudo sem você tocar em nada.</p>
+    <p class="lead fu">O TESP usa o Serviço de Acessibilidade do Android pra ler a tela do iFood. Detecta chegada e saída da loja. Registra tudo sem você tocar em nada.</p>
     <div class="cgrid fu">
       <div class="card">
         <span class="card-icon">👁️</span>
         <span class="card-tag">Leitura de tela</span>
         <div class="card-title">Lê o iFood sem integração</div>
-        <p class="card-desc">Sem acesso à sua conta. Sem API. O app lê o que aparece na tela — o nome do restaurante e o momento da coleta — <strong>igual você leria.</strong></p>
+        <p class="card-desc">Sem acesso à sua conta. Sem API. Lê o que aparece na tela — nome do restaurante e momento da coleta — <strong>igual você leria.</strong></p>
       </div>
       <div class="card hl">
         <span class="card-icon">⚡</span>
         <span class="card-tag">Automático</span>
         <div class="card-title">Detecta chegada e saída sozinho</div>
-        <p class="card-desc">Entrou na tela de coleta no iFood? O TESP já começou a contar. Saiu com o pedido? Já registrou. <strong>Você não faz nada.</strong></p>
+        <p class="card-desc">Entrou na tela de coleta? Já começou a contar. Saiu com o pedido? Já registrou. <strong>Você não faz nada.</strong></p>
       </div>
       <div class="card">
         <span class="card-icon">🔔</span>
         <span class="card-tag">Notificação na hora</span>
-        <div class="card-title">Tempo de espera na oferta</div>
-        <p class="card-desc">No momento que o iFood te manda uma oferta, o TESP já te avisa o tempo médio daquela loja. <strong>Você decide antes de aceitar.</strong></p>
+        <div class="card-title">Aviso na oferta</div>
+        <p class="card-desc">No momento que o iFood te manda uma oferta, o TESP notifica com o tempo médio daquela loja. <strong>Você decide antes de aceitar.</strong></p>
       </div>
       <div class="card hl">
         <span class="card-icon">🌐</span>
         <span class="card-tag">Rede colaborativa</span>
-        <div class="card-title">Mais entregadores = dado mais preciso</div>
+        <div class="card-title">Mais usuários = dado mais preciso</div>
         <p class="card-desc">Cada entregador com o app ativo contribui automaticamente. <strong>Quanto mais gente usa, mais acertivo fica pra todo mundo.</strong></p>
       </div>
     </div>
@@ -534,7 +550,7 @@ footer p{font-size:12px;color:var(--mu)}
   <div class="c">
     <div class="ey fu"><div class="ey-l"></div><span class="ey-t">Como o cálculo funciona</span></div>
     <h2 class="fu">Média real.<br><span class="ac">De coleta real.</span></h2>
-    <p class="lead fu">Não é estimativa. É o tempo que entregadores de verdade ficaram esperando naquela loja — capturado automaticamente pelo app.</p>
+    <p class="lead fu">Não é estimativa. É o tempo que entregadores de verdade ficaram esperando naquela loja — capturado automaticamente.</p>
     <div class="calc-wrap fu">
       <div class="calc-header">
         <span class="calc-ht">Fluxo do dado</span>
@@ -542,29 +558,13 @@ footer p{font-size:12px;color:var(--mu)}
       </div>
       <div class="calc-body">
         <div class="calc-flow">
-          <div class="cf-step">
-            <div class="cf-num">01</div>
-            <div class="cf-title">Você chega na loja</div>
-            <div class="cf-desc">O app detecta a tela de coleta do iFood e inicia o contador automaticamente.</div>
-          </div>
-          <div class="cf-step">
-            <div class="cf-num">02</div>
-            <div class="cf-title">Você sai com o pedido</div>
-            <div class="cf-desc">O app detecta que você saiu da tela e registra o tempo total de espera.</div>
-          </div>
-          <div class="cf-step">
-            <div class="cf-num">03</div>
-            <div class="cf-title">Dado vai pro banco</div>
-            <div class="cf-desc">Nome da loja + tempo de coleta são enviados automaticamente.</div>
-          </div>
-          <div class="cf-step">
-            <div class="cf-num">04</div>
-            <div class="cf-title">Média atualizada</div>
-            <div class="cf-desc">O app recalcula a média dos últimos 10 registros daquela loja em tempo real.</div>
-          </div>
+          <div><div class="cf-num">01</div><div class="cf-title">Você chega na loja</div><div class="cf-desc">O app detecta a tela de coleta do iFood e inicia o contador.</div></div>
+          <div><div class="cf-num">02</div><div class="cf-title">Você sai com o pedido</div><div class="cf-desc">O app detecta a saída e registra o tempo total automaticamente.</div></div>
+          <div><div class="cf-num">03</div><div class="cf-title">Dado vai pro banco</div><div class="cf-desc">Nome da loja + tempo de coleta são enviados sem você fazer nada.</div></div>
+          <div><div class="cf-num">04</div><div class="cf-title">Média atualizada</div><div class="cf-desc">O app recalcula a média dos últimos registros daquela loja em tempo real.</div></div>
         </div>
         <div class="calc-note">
-          O dado pode ter <strong>5 minutos ou 1 dia</strong> — depende de quando o último entregador passou com o app ativo. Quanto mais entregadores usando, mais fresco é o dado. Por isso cada usuário novo <strong>melhora a experiência de todo mundo.</strong>
+          O dado pode ter <strong>5 minutos ou alguns dias</strong> — depende de quando o último entregador passou com o app ativo. Quanto mais gente usando, mais fresco e preciso fica o dado. Por isso cada usuário novo <strong>melhora a experiência de todo mundo.</strong>
         </div>
       </div>
     </div>
@@ -604,58 +604,6 @@ footer p{font-size:12px;color:var(--mu)}
         </div>
       </div>
     </div>
-    <div class="vid-wrap fu">
-      <div class="vid-label">▶ demonstração do app em funcionamento</div>
-      <video controls playsinline preload="metadata">
-        <source src="tesp-demo.mp4" type="video/mp4">
-      </video>
-    </div>
-  </div>
-</section>
-
-<div class="div"></div>
-
-<!-- LOJAS -->
-<section>
-  <div class="c">
-    <div class="ey fu"><div class="ey-l"></div><span class="ey-t">Lojas com dados</span></div>
-    <h2 class="fu">26 lojas hoje.<br><span class="ac">Crescendo a cada coleta.</span></h2>
-    <p class="lead fu">Cada entregador com o app ativo expande a cobertura automaticamente. Você não precisa cadastrar nada — o app reconhece a loja sozinho.</p>
-    <div class="lojas-wrap fu">
-      <div class="lojas-h">
-        <span class="lojas-ht">Lojas com dados · São Paulo SP</span>
-        <span class="lojas-ct">26 lojas registradas</span>
-      </div>
-      <div class="lojas-grid">
-        <div class="loja-i">Aima</div>
-        <div class="loja-i">Bar E Lanches Estadão</div>
-        <div class="loja-i">Barbacoa Itaim</div>
-        <div class="loja-i">Box St. Burger</div>
-        <div class="loja-i">Bullguer — Vila Nova Conceição</div>
-        <div class="loja-i">Burdog Hamburgueria — Brooklin</div>
-        <div class="loja-i">Burger King — Av Moreira Guimarães</div>
-        <div class="loja-i">Café Zinn</div>
-        <div class="loja-i">Corpfit Gelato Saudável — Itaim</div>
-        <div class="loja-i">Doce Mania</div>
-        <div class="loja-i">Fat Boyz Burger</div>
-        <div class="loja-i">Feijoada Express</div>
-        <div class="loja-i">Greenjoy — Wraps & Saladas</div>
-        <div class="loja-i">Habib's Esfiha — Lins de Vasconcelos</div>
-        <div class="loja-i">Hamburgueria Insano Burguer</div>
-        <div class="loja-i">Healthy Bites Atelier</div>
-        <div class="loja-i">Marmitaria Itaim</div>
-        <div class="loja-i">Mauli Bowls, Saladas, Wraps</div>
-        <div class="loja-i">Notte Rotisserie</div>
-        <div class="loja-i">Pastel Do Juca Augusta</div>
-        <div class="loja-i">Sobremesas Do Méqui (dom)</div>
-        <div class="loja-i">Sukiya — Ana Rosa</div>
-        <div class="loja-i">Sushi Riaru</div>
-        <div class="loja-i">Tatá Sushi</div>
-        <div class="loja-i">Tatu Bola</div>
-        <div class="loja-i">Torta No Quintal</div>
-      </div>
-      <div class="lojas-f"><span>→</span> Qualquer loja que um entregador com o app ativo passar começa a entrar automaticamente.</div>
-    </div>
   </div>
 </section>
 
@@ -677,7 +625,7 @@ footer p{font-size:12px;color:var(--mu)}
       <div class="quem-txt">
         <p>Faço entrega pelo iFood em SP. As mesmas 10 a 12 horas por dia que você trabalha — esperando 20, 30 minutos numa loja sem saber se o pedido ia compensar.</p>
         <p>Comecei com um bot no Telegram onde cada entregador registrava manualmente. Funcionou — provou que o problema era real. O app é o passo seguinte: <strong>o mesmo dado, sem precisar de ninguém lembrar de apertar botão.</strong></p>
-        <p>Não tenho formação técnica. Não tenho investidor. Tenho o problema na pele — e usei IA pra construir a solução. <strong>Ainda faço entrega. Ainda uso o produto.</strong></p>
+        <p>Não tenho formação técnica. Não tenho investidor. Tenho o problema na pele — e usei IA pra construir. <strong>Ainda faço entrega. Ainda uso o produto.</strong></p>
       </div>
     </div>
   </div>
@@ -697,7 +645,7 @@ footer p{font-size:12px;color:var(--mu)}
       </div>
       <div class="faq-i">
         <div class="faq-q">Como faço pra baixar?<span class="faq-ic">+</span></div>
-        <div class="faq-a"><div class="faq-ai">Preenche o formulário aqui mesmo no site com nome, e-mail e @Instagram. O acesso é liberado manualmente em até 24h — você recebe o link de instalação via Play Store no e-mail cadastrado.</div></div>
+        <div class="faq-a"><div class="faq-ai">Preenche o formulário aqui no site com nome, e-mail e WhatsApp. O acesso é liberado em até 24h — o link de instalação via Play Store chega pelo WhatsApp.</div></div>
       </div>
       <div class="faq-i">
         <div class="faq-q">O que é o Serviço de Acessibilidade? É seguro?<span class="faq-ic">+</span></div>
@@ -705,7 +653,7 @@ footer p{font-size:12px;color:var(--mu)}
       </div>
       <div class="faq-i">
         <div class="faq-q">Precisa abrir o app toda vez?<span class="faq-ic">+</span></div>
-        <div class="faq-a"><div class="faq-ai">Não. Depois de ativar o serviço de acessibilidade, o TESP roda em segundo plano. Você recebe a notificação com o tempo de espera automaticamente, sem precisar abrir nada.</div></div>
+        <div class="faq-a"><div class="faq-ai">Não. Depois de ativar o serviço, o TESP roda em segundo plano. Você recebe a notificação automaticamente quando chega uma oferta, sem precisar abrir nada.</div></div>
       </div>
       <div class="faq-i">
         <div class="faq-q">Funciona só pra iFood?<span class="faq-ic">+</span></div>
@@ -713,7 +661,7 @@ footer p{font-size:12px;color:var(--mu)}
       </div>
       <div class="faq-i">
         <div class="faq-q">O dado pode estar desatualizado?<span class="faq-ic">+</span></div>
-        <div class="faq-a"><div class="faq-ai">Pode ter 5 minutos ou 1 dia — depende de quando o último entregador com o app passou naquela loja. O app exibe a média dos últimos 10 registros. Quanto mais entregadores usando, mais fresco e preciso fica o dado.</div></div>
+        <div class="faq-a"><div class="faq-ai">Pode ter 5 minutos ou alguns dias — depende de quando o último entregador com o app passou naquela loja. Quanto mais usuários ativos, mais fresco e preciso fica o dado.</div></div>
       </div>
     </div>
   </div>
@@ -725,11 +673,11 @@ footer p{font-size:12px;color:var(--mu)}
 <section id="cta">
   <div class="cta-glow"></div>
   <div class="c">
-    <div class="ey fu" style="justify-content:center"><div class="ey-l"></div><span class="ey-t">Fase de testes · Vagas abertas</span></div>
+    <div class="ey fu" style="justify-content:center"><div class="ey-l"></div><span class="ey-t">Vagas abertas</span></div>
     <h2 class="fu">Preenche o formulário.<br><span class="ac">A gente libera em até 24h.</span></h2>
-    <p class="sub fu">O TESP está em fase de testes. Preenche o formulário abaixo — o acesso é liberado em até 24h, direto pela Play Store.</p>
+    <p class="sub fu">Acesso gratuito, direto pela Play Store. Use o e-mail da sua conta Google pra receber o link.</p>
     <div class="fu">
-      <a href="#acesso" class="btn" style="font-size:14px;padding:18px 40px" onclick="gtag('event','cta_click',{'event_category':'final_cta'})">Solicitar acesso agora <span>↓</span></a>
+      <a href="#acesso" class="btn" style="font-size:14px;padding:18px 40px" onclick="gtag('event','cta_click',{'event_category':'final_cta'})">Solicitar acesso agora <span>↑</span></a>
     </div>
     <p class="fu" style="margin-top:18px;font-size:12px;color:var(--mu)">Gratuito · Android · Acesso em até 24h · São Paulo</p>
   </div>
@@ -745,6 +693,15 @@ footer p{font-size:12px;color:var(--mu)}
 </footer>
 
 <script>
+// Máscara WhatsApp
+document.getElementById('whatsapp')?.addEventListener('input', function(e) {
+  let v = e.target.value.replace(/\D/g,'');
+  if(v.length > 11) v = v.slice(0,11);
+  if(v.length > 6) v = '(' + v.slice(0,2) + ') ' + v.slice(2,7) + '-' + v.slice(7);
+  else if(v.length > 2) v = '(' + v.slice(0,2) + ') ' + v.slice(2);
+  else if(v.length > 0) v = '(' + v;
+  e.target.value = v;
+});
 
 // Supabase
 const SUPA_URL = 'https://sbywtjxgkhqdeplymhdz.supabase.co';
@@ -753,31 +710,27 @@ const SUPA_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsI
 async function enviarFormulario() {
   const nome = document.getElementById('nome');
   const email = document.getElementById('email');
-  const instagram = document.getElementById('instagram');
+  const whatsapp = document.getElementById('whatsapp');
   const btn = document.getElementById('btn-submit');
   const btnText = document.getElementById('btn-text');
   const errGeral = document.getElementById('form-error-geral');
   let valido = true;
 
-  // Reset erros
-  [nome, email, instagram].forEach(f => f.classList.remove('err'));
+  [nome, email, whatsapp].forEach(f => f.classList.remove('err'));
   errGeral.style.display = 'none';
 
-  // Validação
   if (!nome.value.trim()) { nome.classList.add('err'); valido = false; }
   const emailReg = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!email.value.trim() || !emailReg.test(email.value.trim())) { email.classList.add('err'); valido = false; }
-  if (!instagram.value.trim()) { instagram.classList.add('err'); valido = false; }
+  const waNums = whatsapp.value.replace(/\D/g,'');
+  if (waNums.length < 10 || waNums.length > 11) { whatsapp.classList.add('err'); valido = false; }
   if (!valido) return;
 
-  // Loading
   btn.disabled = true;
   btnText.textContent = 'Enviando...';
 
-  const insta = instagram.value.trim().startsWith('@') ? instagram.value.trim() : '@' + instagram.value.trim();
-
   try {
-    const res = await fetch(`https://sbywtjxgkhqdeplymhdz.supabase.co/rest/v1/leads`, {
+    const res = await fetch(`${SUPA_URL}/rest/v1/leads`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -788,18 +741,20 @@ async function enviarFormulario() {
       body: JSON.stringify({
         nome: nome.value.trim(),
         email: email.value.trim().toLowerCase(),
-        instagram: insta,
+        whatsapp: waNums,
+        grupo_whatsapp: document.getElementById('grupo_whatsapp').checked,
         criado_em: new Date().toISOString()
       })
     });
 
     if (res.ok || res.status === 201) {
-      gtag('event', 'form_submit', {'event_category': 'conversao', 'event_label': 'acesso_tesp'});
+      gtag('event', 'form_submit', {'event_category':'conversao','event_label':'acesso_tesp'});
       document.getElementById('form-body').style.display = 'none';
-      document.getElementById('form-success').classList.add('show');
-      document.getElementById('form-success').style.display = 'flex';
+      const s = document.getElementById('form-success');
+      s.classList.add('show');
+      s.style.display = 'flex';
     } else {
-      const err = await res.json();
+      const err = await res.json().catch(()=>({}));
       console.error('Supabase error:', err);
       errGeral.style.display = 'block';
       btn.disabled = false;
@@ -813,13 +768,13 @@ async function enviarFormulario() {
   }
 }
 
-// Enter no formulário
-['nome','email','instagram'].forEach(id => {
+['nome','email','whatsapp'].forEach(id => {
   document.getElementById(id)?.addEventListener('keydown', e => {
     if (e.key === 'Enter') enviarFormulario();
   });
 });
 
+// FAQ
 document.querySelectorAll('.faq-q').forEach(q=>{
   q.addEventListener('click',()=>{
     const i=q.parentElement,o=i.classList.contains('open');
@@ -827,6 +782,8 @@ document.querySelectorAll('.faq-q').forEach(q=>{
     if(!o)i.classList.add('open');
   });
 });
+
+// Fade-up
 const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('v')}),{threshold:0.08});
 document.querySelectorAll('.fu').forEach(el=>obs.observe(el));
 </script>

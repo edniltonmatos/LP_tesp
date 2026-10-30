@@ -258,7 +258,8 @@ h1{font-size:60px}h2{font-size:46px}p{font-size:18px}
 .nao li{font-size:28px}
 .dado .log{margin-top:0}
 .who{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
-.who .pic{aspect-ratio:auto;min-height:100%}
+.who .pic{aspect-ratio:auto;min-height:0;height:auto;align-self:stretch}
+.who .pic img{position:absolute;inset:0;object-position:50% 35%}
 .who .pic:after{background:linear-gradient(180deg,rgba(14,15,12,0) 45%,rgba(14,15,12,.9) 100%)}
 .who .cap{left:48px;right:48px;bottom:48px}
 .who .cap h2{font-size:52px}
@@ -270,7 +271,7 @@ h1{font-size:60px}h2{font-size:46px}p{font-size:18px}
 .stats strong{font-size:30px}.stats span{font-size:14px}
 .seg .banco{font-size:16px}
 .log div{font-size:16px}.log .res b{font-size:30px}
-.final{min-height:760px;align-items:center}
+.final{min-height:0;align-items:center;padding:120px 0}
 .final:before{background:linear-gradient(90deg,rgba(14,15,12,.05) 0%,rgba(14,15,12,.6) 45%,#0E0F0C 75%)}
 .final>img{object-position:30% 50%}
 .final .in{display:flex;flex-direction:column;align-items:flex-start;padding:0 var(--px);margin-left:auto;max-width:calc(600px + var(--px));width:auto}
